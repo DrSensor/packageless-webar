@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+
+    <meta name="description" content="Pseudo WebAR demo using Babylon.js" />
+    <title>WebAR - Demo</title>
+
+    <!-- <script type="module" src="https://jspm.dev/es-module-shims"></script> -->
+    <script type="importmap">
+        {
+            "imports": {
+                "@babylonjs/core": "https://jspm.dev/@babylonjs/core@4",
+                "@babylonjs/materials": "https://jspm.dev/@babylonjs/materials@4",
+                "./viewport": "/viewport/index.js"
+            }
+        }
+    </script>
+
+    <link rel="stylesheet" href="style.css" />
+    <script type="module" src="/viewport/index.js" async></script>
+    <script type="module" src="/main.js" defer></script>
+</head>
+
+<body>
+    <canvas id="viewport"></canvas>
+    <video id="skybox"></video>
+</body>
+
+</html>
